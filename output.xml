@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 5.0.1 (Python 3.9.7 on win32)" generated="20220719 20:45:09.479" rpa="false" schemaversion="3">
+<suite id="s1" name="WFEAutomation" source="D:\POCs\Robot Framework POC\WFEAutomation.robot">
+<test id="s1-t1" name="Fill WebFileExpress Form" line="12">
+<kw name="Open WebFileExpress">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${WEBFILEEXPRESS URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20220719 20:45:09.640" level="INFO">Opening browser 'Chrome' to base url 'https://webfileexpressapp.returns.ci.avalara.io/'.</msg>
+<status status="PASS" starttime="20220719 20:45:09.639" endtime="20220719 20:45:14.251"/>
+</kw>
+<kw name="Title Should Be" library="SeleniumLibrary">
+<arg>WebFileExpress</arg>
+<doc>Verifies that the current page title equals ``title``.</doc>
+<msg timestamp="20220719 20:45:14.257" level="INFO">Page title is 'WebFileExpress'.</msg>
+<status status="PASS" starttime="20220719 20:45:14.251" endtime="20220719 20:45:14.257"/>
+</kw>
+<status status="PASS" starttime="20220719 20:45:09.639" endtime="20220719 20:45:14.257"/>
+</kw>
+<kw name="Choose Side File">
+<arg>C:\\Users\\abhinav.jindal\\Downloads\\USCODR0100_NonZero_EFT_Final (15).side</arg>
+<kw name="Choose File" library="SeleniumLibrary">
+<arg>id:sideFilePath</arg>
+<arg>${sideFilePath}</arg>
+<doc>Inputs the ``file_path`` into the file input field ``locator``.</doc>
+<msg timestamp="20220719 20:45:14.259" level="INFO">Sending C:\Users\abhinav.jindal\Downloads\USCODR0100_NonZero_EFT_Final (15).side to browser.</msg>
+<status status="PASS" starttime="20220719 20:45:14.258" endtime="20220719 20:45:14.293"/>
+</kw>
+<status status="PASS" starttime="20220719 20:45:14.258" endtime="20220719 20:45:14.294"/>
+</kw>
+<kw name="Enter DOR Base URL">
+<arg>https://www.colorado.gov/revenueonline/_/</arg>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>id:validationDORBaseURL</arg>
+<arg>${dorBaseURL}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220719 20:45:14.294" level="INFO">Typing text 'https://www.colorado.gov/revenueonline/_/' into text field 'id:validationDORBaseURL'.</msg>
+<status status="PASS" starttime="20220719 20:45:14.294" endtime="20220719 20:45:14.428"/>
+</kw>
+<status status="PASS" starttime="20220719 20:45:14.294" endtime="20220719 20:45:14.429"/>
+</kw>
+<kw name="Enter Country">
+<arg>US</arg>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>id:validationInputCountry</arg>
+<arg>${country}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220719 20:45:14.431" level="INFO">Typing text 'US' into text field 'id:validationInputCountry'.</msg>
+<status status="PASS" starttime="20220719 20:45:14.430" endtime="20220719 20:45:14.512"/>
+</kw>
+<status status="PASS" starttime="20220719 20:45:14.430" endtime="20220719 20:45:14.512"/>
+</kw>
+<kw name="Enter Scraper Region">
+<arg>CO</arg>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>id:validationInputScraperRegion</arg>
+<arg>${region}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220719 20:45:14.513" level="INFO">Typing text 'CO' into text field 'id:validationInputScraperRegion'.</msg>
+<status status="PASS" starttime="20220719 20:45:14.513" endtime="20220719 20:45:14.645"/>
+</kw>
+<status status="PASS" starttime="20220719 20:45:14.513" endtime="20220719 20:45:14.646"/>
+</kw>
+<kw name="Enter Tax Form Code">
+<arg>USCODR0100</arg>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>id:validationInputTaxFormCode</arg>
+<arg>${taxFormCode}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220719 20:45:14.647" level="INFO">Typing text 'USCODR0100' into text field 'id:validationInputTaxFormCode'.</msg>
+<status status="PASS" starttime="20220719 20:45:14.647" endtime="20220719 20:45:14.774"/>
+</kw>
+<status status="PASS" starttime="20220719 20:45:14.646" endtime="20220719 20:45:14.774"/>
+</kw>
+<kw name="Click On Next Button">
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>xpath://button[@type='submit']</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20220719 20:45:14.776" level="INFO">Clicking button 'xpath://button[@type='submit']'.</msg>
+<status status="PASS" starttime="20220719 20:45:14.775" endtime="20220719 20:45:14.885"/>
+</kw>
+<status status="PASS" starttime="20220719 20:45:14.774" endtime="20220719 20:45:14.885"/>
+</kw>
+<status status="PASS" starttime="20220719 20:45:09.638" endtime="20220719 20:45:14.885"/>
+</test>
+<doc>This automation is created to submit a side file on WebFileExpress</doc>
+<status status="PASS" starttime="20220719 20:45:09.480" endtime="20220719 20:45:14.886"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="WFEAutomation">WFEAutomation</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
